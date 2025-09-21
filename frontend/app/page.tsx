@@ -85,7 +85,7 @@ export default function OceanDashboard() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6 relative z-10">
         <Tabs defaultValue="dashboard" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-7 lg:w-fit lg:grid-cols-7">
+        <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-1 lg:w-fit lg:grid-cols-7">
             <TabsTrigger value="dashboard" className="gap-2">
               <BarChart3 className="w-4 h-4" />
               Dashboard

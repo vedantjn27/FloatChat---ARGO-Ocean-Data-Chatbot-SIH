@@ -150,7 +150,7 @@ export function UserProfile() {
   return (
     <div className="space-y-6">
       <Tabs defaultValue="profile" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-5">
+      <TabsList className="grid w-full grid-cols-2 sm:grid-cols-5 gap-1">
           <TabsTrigger value="profile">Profile</TabsTrigger>
           <TabsTrigger value="activity">Activity</TabsTrigger>
           <TabsTrigger value="projects">Projects</TabsTrigger>

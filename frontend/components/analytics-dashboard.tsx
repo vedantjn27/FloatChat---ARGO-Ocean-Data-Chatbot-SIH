@@ -236,7 +236,7 @@ export function AnalyticsDashboard() {
       </div>
 
       <Tabs defaultValue="activity" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-4">
+      <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 gap-1">
           <TabsTrigger value="activity">User Activity</TabsTrigger>
           <TabsTrigger value="performance">Performance</TabsTrigger>
           <TabsTrigger value="sources">Data Sources</TabsTrigger>
