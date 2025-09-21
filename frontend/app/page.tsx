@@ -85,36 +85,36 @@ export default function OceanDashboard() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6 relative z-10">
         <Tabs defaultValue="dashboard" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-1 lg:w-fit lg:grid-cols-7">
-            <TabsTrigger value="dashboard" className="gap-2">
-              <BarChart3 className="w-4 h-4" />
-              Dashboard
-            </TabsTrigger>
-            <TabsTrigger value="charts" className="gap-2">
-              <TrendingUp className="w-4 h-4" />
-              Advanced Charts
-            </TabsTrigger>
-            <TabsTrigger value="analytics" className="gap-2">
-              <Brain className="w-4 h-4" />
-              Analytics
-            </TabsTrigger>
-            <TabsTrigger value="chat" className="gap-2">
-              <MessageSquare className="w-4 h-4" />
-              AI Chat
-            </TabsTrigger>
-            <TabsTrigger value="map" className="gap-2">
-              <Map className="w-4 h-4" />
-              Ocean Map
-            </TabsTrigger>
-            <TabsTrigger value="search" className="gap-2">
-              <Search className="w-4 h-4" />
-              Advanced Search
-            </TabsTrigger>
-            <TabsTrigger value="profile" className="gap-2">
-              <User className="w-4 h-4" />
-              Profile
-            </TabsTrigger>
-          </TabsList>
+        <TabsList className="flex w-full overflow-x-auto gap-1 lg:w-fit">
+        <TabsTrigger value="dashboard" className="gap-2 flex-shrink-0">
+          <BarChart3 className="w-4 h-4" />
+          Dashboard
+        </TabsTrigger>
+        <TabsTrigger value="charts" className="gap-2 flex-shrink-0">
+          <TrendingUp className="w-4 h-4" />
+          Advanced Charts
+        </TabsTrigger>
+        <TabsTrigger value="analytics" className="gap-2 flex-shrink-0">
+          <Brain className="w-4 h-4" />
+          Analytics
+        </TabsTrigger>
+        <TabsTrigger value="chat" className="gap-2 flex-shrink-0">
+          <MessageSquare className="w-4 h-4" />
+          AI Chat
+        </TabsTrigger>
+        <TabsTrigger value="map" className="gap-2 flex-shrink-0">
+          <Map className="w-4 h-4" />
+          Ocean Map
+        </TabsTrigger>
+        <TabsTrigger value="search" className="gap-2 flex-shrink-0">
+          <Search className="w-4 h-4" />
+          Advanced Search
+        </TabsTrigger>
+        <TabsTrigger value="profile" className="gap-2 flex-shrink-0">
+          <User className="w-4 h-4" />
+          Profile
+        </TabsTrigger>
+      </TabsList>
 
           <TabsContent value="dashboard" className="space-y-6">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
