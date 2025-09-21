@@ -85,36 +85,41 @@ export default function OceanDashboard() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6 relative z-10">
         <Tabs defaultValue="dashboard" className="space-y-6">
-        <TabsList className="flex w-full overflow-x-auto gap-1 lg:w-fit">
-        <TabsTrigger value="dashboard" className="gap-2 flex-shrink-0">
-          <BarChart3 className="w-4 h-4" />
-          Dashboard
-        </TabsTrigger>
-        <TabsTrigger value="charts" className="gap-2 flex-shrink-0">
-          <TrendingUp className="w-4 h-4" />
-          Advanced Charts
-        </TabsTrigger>
-        <TabsTrigger value="analytics" className="gap-2 flex-shrink-0">
-          <Brain className="w-4 h-4" />
-          Analytics
-        </TabsTrigger>
-        <TabsTrigger value="chat" className="gap-2 flex-shrink-0">
-          <MessageSquare className="w-4 h-4" />
-          AI Chat
-        </TabsTrigger>
-        <TabsTrigger value="map" className="gap-2 flex-shrink-0">
-          <Map className="w-4 h-4" />
-          Ocean Map
-        </TabsTrigger>
-        <TabsTrigger value="search" className="gap-2 flex-shrink-0">
-          <Search className="w-4 h-4" />
-          Advanced Search
-        </TabsTrigger>
-        <TabsTrigger value="profile" className="gap-2 flex-shrink-0">
-          <User className="w-4 h-4" />
-          Profile
-        </TabsTrigger>
-      </TabsList>
+        <TabsList className="grid w-full grid-cols-4 gap-1 md:grid-cols-7 lg:w-fit">
+          <TabsTrigger value="dashboard" className="gap-1 text-xs md:gap-2 md:text-sm">
+            <BarChart3 className="w-3 h-3 md:w-4 md:h-4" />
+            <span className="hidden sm:inline">Dashboard</span>
+            <span className="sm:hidden">Dash</span>
+          </TabsTrigger>
+          <TabsTrigger value="charts" className="gap-1 text-xs md:gap-2 md:text-sm">
+            <TrendingUp className="w-3 h-3 md:w-4 md:h-4" />
+            <span className="hidden sm:inline">Advanced Charts</span>
+            <span className="sm:hidden">Charts</span>
+          </TabsTrigger>
+          <TabsTrigger value="analytics" className="gap-1 text-xs md:gap-2 md:text-sm">
+            <Brain className="w-3 h-3 md:w-4 md:h-4" />
+            Analytics
+          </TabsTrigger>
+          <TabsTrigger value="chat" className="gap-1 text-xs md:gap-2 md:text-sm">
+            <MessageSquare className="w-3 h-3 md:w-4 md:h-4" />
+            <span className="hidden sm:inline">AI Chat</span>
+            <span className="sm:hidden">Chat</span>
+          </TabsTrigger>
+          <TabsTrigger value="map" className="gap-1 text-xs md:gap-2 md:text-sm">
+            <Map className="w-3 h-3 md:w-4 md:h-4" />
+            <span className="hidden sm:inline">Ocean Map</span>
+            <span className="sm:hidden">Map</span>
+          </TabsTrigger>
+          <TabsTrigger value="search" className="gap-1 text-xs md:gap-2 md:text-sm">
+            <Search className="w-3 h-3 md:w-4 md:h-4" />
+            <span className="hidden sm:inline">Advanced Search</span>
+            <span className="sm:hidden">Search</span>
+          </TabsTrigger>
+          <TabsTrigger value="profile" className="gap-1 text-xs md:gap-2 md:text-sm">
+            <User className="w-3 h-3 md:w-4 md:h-4" />
+            Profile
+          </TabsTrigger>
+        </TabsList>
 
           <TabsContent value="dashboard" className="space-y-6">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
