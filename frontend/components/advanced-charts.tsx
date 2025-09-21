@@ -109,7 +109,7 @@ export function AdvancedCharts() {
       </div>
 
       <Tabs value={selectedChart} onValueChange={setSelectedChart} className="space-y-6">
-        <TabsList className="grid w-full grid-cols-5">
+      <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-1">
           <TabsTrigger value="depth-profile" className="gap-2">
             <Activity className="w-4 h-4" />
             Depth Profiles
